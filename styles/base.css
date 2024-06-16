@@ -1,31 +1,110 @@
 /* two google fonts
 my own color pallete
 */
-body {
-    font-family: Arial, Helvetica, sans-serif;
+:root {
+    --primary-color: #ddcad9;
+    --background-color: #590004;
+    --accent1-color: #cb7389;
+    --accent2-color: #ac81a5;
+    --font1-color: #FFFFFF;
+    --font2-color: #000000;
 }
 
-header, main, footer {
+/*
+--heading-font: ;
+--paragraph-font: ;
+*/
+
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    max-width: 640px;
     margin: 0 auto;
+    text-align: center;
+}
+
+header,
+main,
+footer {
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 3px solid var(--background-color);
+    max-width: 640px;
+}
+
+img {
+    width: 200px;
+    height: 3%;
+    border-radius: 15px;
+    padding: 5px;
+
 }
 
 nav {
     max-width: 640px;
     margin: 1rem auto;
     padding: 1rem;
-    background: #88B2D3;
-    border: 1px solid black;
+    background: var(--background-color);
+    border: 1px solid var(--accent2-color);
     border-radius: 15px;
+    color: var(--font1-color);
+}
+nav a {
+    padding: 1em;
+    margin: 1em;
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1rem;
+    grid-gap: 2em;
+    background: var(--primary-color);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+a {
+    color: var(--font1-color);
 }
 
 section {
     padding: 1rem;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--accent1-color);
     border-radius: 15px;
+}
+
+ul {
+    background: var(--accent2-color);
+    border-radius: 15px;
+}
+li {
+    list-style: none;
+}
+
+h2 {
+    color: var(--background-color);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
+    background: var(--background-color);
+    color: var(--font1-color);
+}
+
+#week-box {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.week {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    background: var(--font1-color);
+    border-radius: 15px;
+    margin: 1em;
 }

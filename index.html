@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kiara Ward - WDD 230 - Web Frontend Development</title>
-    <meta name="description" content="Course assignment portal for the WDD 230 - Web Frontend Development class. Kiara Ward">
+    <meta name="description"
+        content="Course assignment portal for the WDD 230 - Web Frontend Development class. Kiara Ward">
     <meta name="author" content="Kiara Ward">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
 </head>
+
 <body>
     <header>
         <!--my image and a name in span-->
-        <p>image</p>
+        <img src="images/profilepic.jpg" alt="Kiara Ward profile picture">
+        <h1>Kiara Ward</h1>
     </header>
     <nav>
         <!--four links hee to Home Chamber Site Plan and Form-->
-        <p>links</p>
+        <a href="index.html">Home</a>
+        <a href="index.html">Chamber</a>
+        <a href="index.html">Site Plan</a>
+        <a href="index.html"> Form</a>
     </nav>
     <main> <!--grid-->
-        <h1></h1>
-        <section>
+        <h2>WDD 230: Web Frontend Development</h2>
+        <section id="activities-box">
             <h2>Learning Activities</h2>
-            <ul>
-                <li>
-                    <p>placeholder</p>
-                </li>
-            </ul>
+            <div id="week-box">
+                <ul class="week">
+                    <li>Week 01</li>
+                    <li><p>layout</p></li>
+                    <li><a href="media-query.html">Media Query</a></li>
+                    <li>js pen</li>
+                </ul>
+                <ul class="week"><li>Week 02</li></ul>
+                <ul class="week"><li>Week 03</li></ul>
+                <ul class="week"><li>Week 04</li></ul>
+                <ul class="week"><li>Week 05</li></ul>
+                <ul class="week"><li>Week 06</li></ul>
+            </div>
         </section>
         <section>
             <h2>Information</h2>
@@ -35,8 +55,10 @@
         </section>
     </main>
     <footer>
-        <p>copyright dynamic year Kiara Ward</p>
+        <p>&copy; <span id="year"></span> Kiara Ward</p>
         <p>last modified script</p>
     </footer>
+    <script src="scripts/getDates.js"></script>
 </body>
+
 </html>
