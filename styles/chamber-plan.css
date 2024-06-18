@@ -3,3 +3,70 @@ lets get color variables we can copy paste into the website
 lets get the fonts figured out
 lets get the grids down
 */
+
+:root {
+    --gunmetal: #05303B;
+    --cerulean: #24749f;
+    --celestial-blue: #5B96C2;
+    --viridian: #34765d;
+    --forest-green: #38893c;
+    --sbgus-green: #6BE23C;
+    --atomic-tangerine: #DE8F6E;
+    --violet: #58355E;
+}
+body{
+    background: rgb(208, 207, 207);
+}
+
+main, header, footer {
+    max-width: 750px;
+    margin: 1rem auto;
+    padding: 1rem;
+    background: white;
+}
+
+#schema {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    color: black;
+    gap: 2em;
+    margin: 1rem auto;
+}
+p, h2 {
+    color: white
+}
+
+#schema div {
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+#schema div p:first-of-type, #schema div h2:first-of-type{
+    color: black
+}
+
+.box1 {
+    background: var(--gunmetal);
+}
+.box2 {
+    background: var(--cerulean);
+}
+.box3 {
+    background: var(--celestial-blue);
+}
+.box4 {
+    background: var(--viridian);
+}
+.box5 {
+    background: var(--forest-green);
+}
+.box6 {
+    background: var(--sbgus-green);
+}
+.box7 {
+    background: var(--atomic-tangerine);
+}
+.box8 {
+    background: var(--violet);
+}
