@@ -16,6 +16,7 @@ lets get the grids down
 }
 body{
     background: rgb(208, 207, 207);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main, header, footer {
@@ -45,7 +46,37 @@ p, h2 {
 #schema div p:first-of-type, #schema div h2:first-of-type{
     color: black
 }
-
+#typography{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.font1 {
+    font-family: 'Inconsolata';
+}
+.font2 {
+    font-family: 'Kanit';
+}
+.font3 {
+    font-family: 'Montserrat';
+}
+.color1{
+    color: var(--gunmetal)
+}
+.color2{
+    color: var(--cerulean);
+}
+.color3{
+    color: var(--forest-green);
+}
+.color4{
+    color: var(--sbgus-green);
+}
+.color5{
+    color: var(--atomic-tangerine);
+}
+.color6{
+    color: var(--violet);
+}
 .box1 {
     background: var(--gunmetal);
 }
@@ -53,20 +84,14 @@ p, h2 {
     background: var(--cerulean);
 }
 .box3 {
-    background: var(--celestial-blue);
-}
-.box4 {
-    background: var(--viridian);
-}
-.box5 {
     background: var(--forest-green);
 }
-.box6 {
+.box4 {
     background: var(--sbgus-green);
 }
-.box7 {
+.box5 {
     background: var(--atomic-tangerine);
 }
-.box8 {
+.box6 {
     background: var(--violet);
 }
