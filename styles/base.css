@@ -3,7 +3,7 @@ my own color pallete
 */
 :root {
     --primary-color: #ddcad9;
-    --background-color:#2F0547;
+    --background-color:#390855;
     --font1-color: #FFFFFF;
     --font2-color: #000000;
 }
@@ -22,7 +22,6 @@ body {
 li, p{
     color: black;
 }
-
 header,
 main,
 footer {
@@ -34,7 +33,7 @@ footer {
 
 img {
     width: 200px;
-    height: 3%;
+    height: 250px;
     border-radius: 15px;
     padding: 5px;
 

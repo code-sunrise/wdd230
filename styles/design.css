@@ -24,7 +24,6 @@ main {
 
 h2 {
 	color: navy;
-	text-align: center;
 }
 
 article p {
@@ -34,6 +33,7 @@ article p {
 .callout {
 	color: #777;
 	background-color: #702963;
+	padding: 1rem;
 }
 
 footer {
