@@ -43,7 +43,7 @@ footer {
 
 img {
     width: 200px;
-    height: 250px;
+    height: auto;
     border-radius: 15px;
     padding: 5px;
 
@@ -57,17 +57,46 @@ nav {
     border-radius: 15px;
 }
 nav a {
+    display: none;
+    text-align: center;
     padding: 1em;
     margin: 1em;
     color: #FFFFFF;
 }
 
-main {
+button {
+    max-width: 20px;
+    height: auto;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+ 	position: absolute;
+	right: 16px;
+	top: 8px;
+}
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+/*main {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 2em;
     position: relative;
-}
+}*/
 
 header {
     display: flex;
