@@ -50,6 +50,7 @@ img {
 }
 
 nav {
+    position: relative;
     max-width: 640px;
     margin: 1rem auto;
     padding: 1rem;
@@ -73,21 +74,24 @@ button {
     display: flex;
     flex-direction: column;
 }
+.open a{
+    display: flex;
+}
 
-#menu {
+#burger {
 	font-size: 1.5rem;
 	border: 0;
 	background: none;
-	color: #000;
+	color: #FFFFFF;
  	position: absolute;
-	right: 16px;
-	top: 8px;
+	left: 20px;
+    top: 2px;
 }
-#menu::before {
+#burger::before {
 	content: "☰";
 }
 
-#menu.open::before {
+#burger.open::before {
 	content: "X";
 }
 
