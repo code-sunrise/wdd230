@@ -1,10 +1,12 @@
 const modeButton = document.querySelector('#mode');
 const body = document.querySelector('body');
-var ulList = document.querySelectorAll('ul');
-var liList = document.querySelectorAll('li');
-var aList = document.querySelectorAll('a');
-var pList = document.querySelectorAll('p');
-var span = document.querySelector('span');
+const ulList = document.querySelectorAll('ul');
+const liList = document.querySelectorAll('li');
+const aList = document.querySelectorAll('a');
+const pList = document.querySelectorAll('p');
+const span = document.querySelector('span');
+const label = document.querySelector('#label');
+const mainNav = document.querySelectorAll('.navList');
 
 
 
@@ -25,7 +27,10 @@ modeButton.addEventListener("click", () => {
             p.style.color = '#fff'
         })
         span.style.color = "#fff";
-
+        mainNav.forEach((link) => {
+            link.style.color = '#fff';
+        });
+        label.style.color = '#fff';
         modeButton.textContent = '🔆';
     }
     else {
@@ -44,6 +49,10 @@ modeButton.addEventListener("click", () => {
             p.style.color = '#000'
         })
         span.style.color = "#000";
+        mainNav.forEach((link) => {
+            link.style.color = '#fff';
+        });
+        label.style.color = '#fff';
         modeButton.textContent = '🕶️';
     }
 });
