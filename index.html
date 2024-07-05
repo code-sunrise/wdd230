@@ -43,7 +43,11 @@
     </nav>
     <main> <!--grid-->
         <div class="herobox">
-            <picture><img src="images/las-vegas-nevada-temple.jpg" alt=""></picture>
+            <picture>
+                <source srcset="images/" media="(max-width: 600px)">
+                <source srcset="image/" media="max-width: 1000px">
+                <img src="images/las-vegas-nevada-temple.jpg" alt="hero image">
+            </picture>
             <div id="herolabel">
                 <p id="label">Las Vegas Temple</p>
             </div>

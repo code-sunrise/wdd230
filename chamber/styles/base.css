@@ -1,0 +1,67 @@
+/* phone size*/
+
+/*the same style needs to work for all pages for this site*/
+/* fonts in body*/
+body {
+    font-family: 'Montserrat', 'Kanit', Arial, Helvetica, sans-serif;
+    display: block;
+    margin: 0;
+    padding: 0;
+    max-width: 640px;
+}
+
+main {
+    padding: 1rem;
+}
+
+header {
+    display: block;
+    text-align: center;
+}
+
+header,
+footer {
+    background: #24749f;
+    color: #05303B;
+    padding: 1rem;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    background: #38893C;
+    margin: 0 auto;
+    padding: 1rem;
+    text-decoration: none;
+    font-family: 'Inconsolata';
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    font-family: 'Inconsolata';
+}
+
+/*nav a {
+    color: #6BE23C;
+}*/
+.credit {
+    font-size: 10px;
+}
+
+#banner {
+    max-width: 500px;
+    max-height: auto;
+}
+
+#spotlight,
+#current,
+#statsgrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 3rem;
+}

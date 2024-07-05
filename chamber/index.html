@@ -1,28 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <meta name="description" content="">
     <meta name="author" content="Kiara Ward">
+    <meta property="og:title" content="Kiara Ward - WDD230 - Chamber Final">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="WDD230 Chamber of Commerce Final Home Page">
+    <meta property="og:url" content="https://code-sunrise.github.io/wdd230/chamber/index.html">
+    <!--Add social media meta settings for the title, type, image, and url-->
     <!--flavicon-->
+    <link rel="icon" href="images/chamber.ico">
+
+    <!--Ssyle sheets-->
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+
     <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
+    <!-- Anything that fits the whole screen has no class
+     Anything that hits the 'max width' on the margin is .page-->
     <header>
-        <nav id="navgrid">
-            <link rel="stylesheet" href="index.html">
-            <link rel="stylesheet" href="discover.html">
-            <link rel="stylesheet" href="directory.html">
-            <link rel="stylesheet" href="join.html">
-        </nav>
+        <div class="headergrid">
+            <img id="banner" src="images/chamberheader.jpg" alt="header image">
+            <p class="credit">Photo by <a
+                    href="https://unsplash.com/@lance_asper?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Lance
+                    Asper</a> on <a
+                    href="https://unsplash.com/photos/aerial-photography-of-coastline-with-people-eJx43ng-fTU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </p>
+            <h1>Palm Bay Chamber of Commerce</h1>
+        </div>
     </header>
-    <main></main>
+    <nav id="navgrid" class="page">
+        <a href="index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+    </nav>
+    <main class="page">
+        <div id="maingrid">
+            <div class="maingrid">
+                <picture id="heroimage"></picture>
+                <p id="herolabel"></p>
+            </div>
+            <div class="maingrid" id="statsgrid">
+                <!-- one of these will be weather-->
+                <div>
+                    <img src="images/weather.jpg" alt="weather image">
+                    <p class="label">Weather</p>
+                    <p class="credit">Photo by <a
+                            href="https://unsplash.com/@wimvanteinde?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Wim
+                            van 't Einde</a> on <a
+                            href="https://unsplash.com/photos/assorted-color-umbrella-lot-under-white-clouds-at-daytime-uj7eb7CgqRk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                    </p>
+                </div>
+                <div>
+                    <img src="images/weather.jpg" alt="weather image">
+                    <p class="label">Weather</p>
+                    <p class="credit">Photo by <a
+                            href="https://unsplash.com/@wimvanteinde?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Wim
+                            van 't Einde</a> on <a
+                            href="https://unsplash.com/photos/assorted-color-umbrella-lot-under-white-clouds-at-daytime-uj7eb7CgqRk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                    </p>
+                </div>
+                <div>
+                    <img src="images/weather.jpg" alt="weather image">
+                    <p class="label">Weather</p>
+                    <p class="credit">Photo by <a
+                            href="https://unsplash.com/@wimvanteinde?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Wim
+                            van 't Einde</a> on <a
+                            href="https://unsplash.com/photos/assorted-color-umbrella-lot-under-white-clouds-at-daytime-uj7eb7CgqRk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                    </p>
+                </div>
+            </div>
+            <div class="maingrid">
+                <div id="current">
+                    <div>
+                        <img src="images/current.jpg" alt="current events place holder">
+                        <p class="credit">Photo by <a
+                                href="https://unsplash.com/@jessbaileydesigns?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jess
+                                Bailey</a> on <a
+                                href="https://unsplash.com/photos/pen-near-black-lined-paper-and-eyeglasses-q10VITrVYUM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                        </p>
+                        <p>Event label here</p>
+                    </div>
+                    <div>
+                        <img src="images/current.jpg" alt="current events place holder">
+                        <p class="credit">Photo by <a
+                                href="https://unsplash.com/@jessbaileydesigns?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jess
+                                Bailey</a> on <a
+                                href="https://unsplash.com/photos/pen-near-black-lined-paper-and-eyeglasses-q10VITrVYUM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                        </p>
+                        <p>Event label here</p>
+                    </div>
+                    <div>
+                        <img src="images/current.jpg" alt="current events place holder">
+                        <p class="credit">Photo by <a
+                                href="https://unsplash.com/@jessbaileydesigns?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jess
+                                Bailey</a> on <a
+                                href="https://unsplash.com/photos/pen-near-black-lined-paper-and-eyeglasses-q10VITrVYUM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                        </p>
+                        <p>Event label here</p>
+                    </div>
+                    <div>
+                        <img src="images/current.jpg" alt="current events place holder">
+                        <p class="credit">Photo by <a
+                                href="https://unsplash.com/@jessbaileydesigns?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jess
+                                Bailey</a> on <a
+                                href="https://unsplash.com/photos/pen-near-black-lined-paper-and-eyeglasses-q10VITrVYUM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                        </p>
+                        <p>Event label here</p>
+                    </div>
+                    <div>
+                        <img src="images/current.jpg" alt="current events place holder">
+                        <p class="credit">Photo by <a
+                                href="https://unsplash.com/@jessbaileydesigns?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jess
+                                Bailey</a> on <a
+                                href="https://unsplash.com/photos/pen-near-black-lined-paper-and-eyeglasses-q10VITrVYUM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                        </p>
+                        <p>Event label here</p>
+                    </div>
+                    <div>
+                        <img src="images/current.jpg" alt="current events place holder">
+                        <p class="credit">Photo by <a
+                                href="https://unsplash.com/@jessbaileydesigns?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jess
+                                Bailey</a> on <a
+                                href="https://unsplash.com/photos/pen-near-black-lined-paper-and-eyeglasses-q10VITrVYUM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                        </p>
+                        <p>Event label here</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <p></p>
+                </div>
+                <div id="spotlight">
+                    <div>
+                        <img src="images/ad-placeholder.jpg" alt="add place holder" class="ad">
+                        <p class="credit">Photo by <a
+                                href="https://unsplash.com/@pawel_czerwinski?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Pawel
+                                Czerwinski</a> on <a
+                                href="https://unsplash.com/photos/turned-off-signage-_9dSF0Hwitw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                        </p>
+                        <p class="label">Ad</p>
+                    </div>
+                    <div>
+                        <img src="images/ad-placeholder.jpg" alt="add place holder" class="ad">
+                        <p class="credit">Photo by <a
+                                href="https://unsplash.com/@pawel_czerwinski?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Pawel
+                                Czerwinski</a> on <a
+                                href="https://unsplash.com/photos/turned-off-signage-_9dSF0Hwitw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                        </p>
+                        <p class="label">Ad</p>
+                    </div>
+                    <div>
+                        <img src="images/ad-placeholder.jpg" alt="add place holder" class="ad">
+                        <p class="credit">Photo by <a
+                                href="https://unsplash.com/@pawel_czerwinski?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Pawel
+                                Czerwinski</a> on <a
+                                href="https://unsplash.com/photos/turned-off-signage-_9dSF0Hwitw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                        </p>
+                        <p class="label">Ad</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer>
-        <p>&copy; Kiara Ward</p>
+        <p>&copy; 2024 Kiara Ward</p>
+        <p>other contact information</p>
+        <p></p>
     </footer>
 </body>
+
 </html>
