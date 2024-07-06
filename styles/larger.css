@@ -1,18 +1,22 @@
 /* min width media query*/
 
-@media screen and (min-width:500px) {
+@media screen and (min-width:641px) {
     body {
         font-family: 'Poppins', Arial, Helvetica, sans-serif;
         margin: 0 auto;
         text-align: center;
     }
 
-    nav {
+    .navigation {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-   /* main {
+    #burger {
+        display: none;
+    }
+
+    /* main {
         grid-template-columns: 2fr 1fr;
         grid-template-rows: auto 1fr;
     }*/
@@ -37,6 +41,7 @@
         border-radius: 20px;
         padding: 10px;
     }
+
     nav a {
         display: contents;
         text-align: center;

@@ -41,7 +41,7 @@
      Anything that hits the 'max width' on the margin is .page-->
     <header>
         <div class="headergrid">
-            <img id="banner" src="images/chamberheader.jpg" alt="header image">
+            <img id="banner" src="images/banner.jpg" alt="header image">
             <p class="credit">Photo by <a
                     href="https://unsplash.com/@lance_asper?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Lance
                     Asper</a> on <a
@@ -50,7 +50,8 @@
             <h1>Palm Bay Chamber of Commerce</h1>
         </div>
     </header>
-    <nav id="navgrid" class="page">
+    <nav class="navigation">
+        <button id="burger"></button>
         <a href="index.html">Home</a>
         <a href="discover.html">Discover</a>
         <a href="directory.html">Directory</a>
@@ -59,42 +60,45 @@
     <main class="page">
         <div id="maingrid">
             <div class="maingrid">
-                <picture id="heroimage"></picture>
-                <p id="herolabel"></p>
+                <picture id="heroimage">
+                    <img src="images/chamberheader.jpg" alt="Beach">
+                </picture>
+                <p id="herolabel">Join now</p>
             </div>
             <div class="maingrid" id="statsgrid">
                 <!-- one of these will be weather-->
                 <div>
                     <img src="images/weather.jpg" alt="weather image">
-                    <p class="label">Weather</p>
                     <p class="credit">Photo by <a
                             href="https://unsplash.com/@wimvanteinde?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Wim
                             van 't Einde</a> on <a
                             href="https://unsplash.com/photos/assorted-color-umbrella-lot-under-white-clouds-at-daytime-uj7eb7CgqRk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
                     </p>
+                    <p class="label">Weather</p>
                 </div>
                 <div>
                     <img src="images/weather.jpg" alt="weather image">
-                    <p class="label">Weather</p>
                     <p class="credit">Photo by <a
                             href="https://unsplash.com/@wimvanteinde?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Wim
                             van 't Einde</a> on <a
                             href="https://unsplash.com/photos/assorted-color-umbrella-lot-under-white-clouds-at-daytime-uj7eb7CgqRk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
                     </p>
+                    <p class="label">other stat</p>
+
                 </div>
                 <div>
                     <img src="images/weather.jpg" alt="weather image">
-                    <p class="label">Weather</p>
                     <p class="credit">Photo by <a
                             href="https://unsplash.com/@wimvanteinde?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Wim
                             van 't Einde</a> on <a
                             href="https://unsplash.com/photos/assorted-color-umbrella-lot-under-white-clouds-at-daytime-uj7eb7CgqRk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
                     </p>
+                    <p class="label">other stat</p>
                 </div>
             </div>
             <div class="maingrid">
                 <div id="current">
-                    <div>
+                    <div class="current">
                         <img src="images/current.jpg" alt="current events place holder">
                         <p class="credit">Photo by <a
                                 href="https://unsplash.com/@jessbaileydesigns?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jess
@@ -103,7 +107,7 @@
                         </p>
                         <p>Event label here</p>
                     </div>
-                    <div>
+                    <div class="current">
                         <img src="images/current.jpg" alt="current events place holder">
                         <p class="credit">Photo by <a
                                 href="https://unsplash.com/@jessbaileydesigns?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jess
@@ -112,7 +116,7 @@
                         </p>
                         <p>Event label here</p>
                     </div>
-                    <div>
+                    <div class="current">
                         <img src="images/current.jpg" alt="current events place holder">
                         <p class="credit">Photo by <a
                                 href="https://unsplash.com/@jessbaileydesigns?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jess
@@ -121,7 +125,7 @@
                         </p>
                         <p>Event label here</p>
                     </div>
-                    <div>
+                    <div class="current">
                         <img src="images/current.jpg" alt="current events place holder">
                         <p class="credit">Photo by <a
                                 href="https://unsplash.com/@jessbaileydesigns?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jess
@@ -130,7 +134,7 @@
                         </p>
                         <p>Event label here</p>
                     </div>
-                    <div>
+                    <div class="current">
                         <img src="images/current.jpg" alt="current events place holder">
                         <p class="credit">Photo by <a
                                 href="https://unsplash.com/@jessbaileydesigns?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jess
@@ -139,7 +143,7 @@
                         </p>
                         <p>Event label here</p>
                     </div>
-                    <div>
+                    <div class="current">
                         <img src="images/current.jpg" alt="current events place holder">
                         <p class="credit">Photo by <a
                                 href="https://unsplash.com/@jessbaileydesigns?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jess
@@ -187,8 +191,10 @@
     <footer>
         <p>&copy; 2024 Kiara Ward</p>
         <p>other contact information</p>
-        <p></p>
+        <span id="lastModified"></span>
     </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/burger.js"></script>
 </body>
 
 </html>

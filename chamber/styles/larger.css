@@ -1,5 +1,31 @@
 /*full sized screen*/
 /*media*/
-main {
-    max-width: 960px;
+@media screen and (min-width:500px) {
+    body {
+        max-width: max-content;
+    }
+    main {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    #spotlight,
+    #current,
+    #statsgrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2em;
+        text-align: left;
+    }
+    #burger {
+        display: none;
+    }
+    .navigation {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    footer {
+        margin-top: 3em;
+        text-align: center;
+    }
 }

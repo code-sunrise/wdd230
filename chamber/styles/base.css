@@ -2,12 +2,15 @@
 
 /*the same style needs to work for all pages for this site*/
 /* fonts in body*/
+
+/* Elements*/
 body {
     font-family: 'Montserrat', 'Kanit', Arial, Helvetica, sans-serif;
     display: block;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     max-width: 640px;
+    font-size: 1.25em;
 }
 
 main {
@@ -21,41 +24,111 @@ header {
 
 header,
 footer {
-    background: #24749f;
-    color: #05303B;
+    background: #05303B;
+    color: #fff;
     padding: 1rem;
 }
 
+button {
+    max-width: 20px;
+    height: auto;
+}
+
+h1 {
+    font-family: "Kanit";
+}
+
 nav a {
-    display: block;
+    display: none;
+    text-decoration: none;
+    font-family: 'Inconsolata';
     color: #fff;
     font-size: 20px;
     background: #38893C;
-    margin: 0 auto;
-    padding: 1rem;
-    text-decoration: none;
-    font-family: 'Inconsolata';
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+
 }
 
 img {
     max-width: 100%;
     height: auto;
+    display: block;
+    border: 10px #05303B solid;
+    border-radius: 15px;
+    position: relative;
+}
+
+p {
+    margin: 15px;
 }
 
 footer {
     font-family: 'Inconsolata';
 }
 
-/*nav a {
-    color: #6BE23C;
-}*/
+
+/* class and ID*/
+.navigation {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.current {
+    background-color: #DE8F6E;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+}
+
+.open a {
+    display: flex;
+}
+
+#burger {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #05303B;
+    cursor: pointer;
+}
+
+#burger::before {
+    content: "☰";
+}
+
+#burger.open::before {
+    content: "X";
+}
+
 .credit {
-    font-size: 10px;
+    font-size: 12px;
+    margin-top: 0.5rem;
+    text-align: left;
+    color: black;
+    background-color: #fff;
+    width: fit-content;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#statsgrid {
+    background-color: #24749f;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+}
+
+.herolabel {
+    background-color: #DE8F6E;
+    color: black;
 }
 
 #banner {
-    max-width: 500px;
-    max-height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 #spotlight,
@@ -63,5 +136,6 @@ footer {
 #statsgrid {
     display: grid;
     grid-template-columns: 1fr;
-    column-gap: 3rem;
+    column-gap: 1rem;
+    padding: 10px;
 }
