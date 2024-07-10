@@ -64,6 +64,11 @@
         right: 55px;
     }
 
+    iframe {
+
+        grid-column: span 2;
+    }
+
     nav a {
         display: contents;
         text-align: center;
