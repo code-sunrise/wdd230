@@ -7,8 +7,12 @@
         text-align: center;
     }
 
-    body, footer, header, main, nav {
-        max-width: 1500px;
+    body,
+    footer,
+    header,
+    main,
+    nav {
+        max-width: 1200px;
     }
 
     .navigation {
@@ -21,18 +25,24 @@
     }
 
     #content {
+        display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: auto;
+        gap: 1em;
     }
-    h2 {
-        grid-column: span;
+
+    #content h2 {
+        grid-column: span 2;
     }
+
     #activitiesbox {
         grid-column: 1;
     }
+
     #aside {
         grid-column: 2;
     }
+
     #herolabel p {
         font-size: 2rem;
         position: absolute;
@@ -44,10 +54,14 @@
     }
 
     picture img {
-        width: 100%;
+        width: 95%;
         height: auto;
         border-radius: 20px;
         padding: 10px;
+    }
+
+    #herolabel p {
+        right: 55px;
     }
 
     nav a {

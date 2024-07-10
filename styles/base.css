@@ -13,6 +13,9 @@ body {
     margin: 0 auto;
     text-align: center;
 }
+iframe {
+    border-radius: 15px;
+}
 li, p{
     color: black;
 }
@@ -29,7 +32,7 @@ picture img {
     font-size: 24px;
     position: absolute;
     top: 15px;
-    left: 35px;
+    right: 35px;
     color: #FFFFFF;
 }
 header,
@@ -140,6 +143,7 @@ footer {
 .week {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
     background: white;
     border-radius: 15px;
 }
