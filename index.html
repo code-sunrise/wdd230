@@ -30,7 +30,7 @@
     <header>
         <div id="mode">🕶️</div>
         <!--my image and a name in span-->
-        <img src="images/profilepic.jpg" alt="Kiara Ward profile picture">
+        <img src="images/profilepic.jpg" alt="Kiara Ward profile picture" loading="lazy">
         <h1>Kiara Ward</h1>
     </header>
     <nav class="navigation">
@@ -44,53 +44,57 @@
     <main> <!--grid-->
         <div class="herobox">
             <picture>
-                <source srcset="images/" media="(max-width: 600px)">
-                <source srcset="image/" media="max-width: 1000px">
-                <img src="images/las-vegas-nevada-temple.jpg" alt="hero image">
-            </picture>
+                <picture>
+                    <source srcset="images/lv-temple-small.webp" media="(max-width: 500px)">
+                    <source srcset="images/lv-temple-med.webp" media="(min-width: 1000px)">
+                    <img src="images/lv-temple-large.webp" alt="Las Vegas Nevada Temple" width="1000px" height="750px" loading="lazy">
+                </picture>
             <div id="herolabel">
                 <p id="label">Las Vegas Temple</p>
             </div>
         </div>
-        <h2>WDD 230: Web Frontend Development</h2>
-        <section id="activitiesbox">
-            <h2>Learning Activities</h2>
-            <div id="week-box">
-                <ul class="week">
-                    <li>Week 01</li>
-                    <li><a href="holygrail.html">Layout</a></li>
-                    <li><a href="media-query.html">Media Query</a></li>
-                    <li><a href="https://codepen.io/codesunrise/pen/OJYOMKN">javascript codepen</a></li>
-                </ul>
-                <ul class="week">
-                    <li>Week 02</li>
-                    <li><a href="design.html">Design</a></li>
-                    <li><a href="https://codepen.io/codesunrise/pen/bGyMdwP">Hamburger Menu</a></li>
-                    <li><a href="week02/bom.html">Book of Mormon activity</a></li>
-                </ul>
-                <ul class="week">
-                    <li>Week 03</li>
-                    <li><a href="week3/images/landscape.webp">Web P</a></li>
-                    <li><a href="week3/lazyload.html">Lazy Loading</a></li>
-                    <li><a href="week3/responsive-images.html"></a></li>
-                </ul>
-                <ul class="week">
-                    <li>Week 04</li>
-                </ul>
-                <ul class="week">
-                    <li>Week 05</li>
-                </ul>
-                <ul class="week">
-                    <li>Week 06</li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <h2>Information</h2>
-            <p>Weather</p>
-            <p>Visits</p>
-            <!--<iframe src="https://www.google.com/maps/place/Palm+Bay,+FL/@27.94352,-80.8080441,11z/data=!3m1!4b1!4m6!3m5!1s0x88de0d3474edb837:0xb256832a4d2d844e!8m2!3d28.0344621!4d-80.5886646!16zL20vMHJocmc?entry=ttu" title="Palm Bay, Florida"></iframe>-->
-        </section>
+        <div id="content">
+            <h2>WDD 230: Web Frontend Development</h2>
+            <section id="activitiesbox">
+                <h2>Learning Activities</h2>
+                <div id="week-box">
+                    <ul class="week">
+                        <li>Week 01</li>
+                        <li><a href="holygrail.html">Layout</a></li>
+                        <li><a href="media-query.html">Media Query</a></li>
+                        <li><a href="https://codepen.io/codesunrise/pen/OJYOMKN">javascript codepen</a></li>
+                    </ul>
+                    <ul class="week">
+                        <li>Week 02</li>
+                        <li><a href="design.html">Design</a></li>
+                        <li><a href="https://codepen.io/codesunrise/pen/bGyMdwP">Hamburger Menu</a></li>
+                        <li><a href="week02/bom.html">Book of Mormon activity</a></li>
+                    </ul>
+                    <ul class="week">
+                        <li>Week 03</li>
+                        <li><a href="week3/images/landscape.webp">Web P</a></li>
+                        <li><a href="week3/lazyload.html">Lazy Loading</a></li>
+                        <li><a href="week3/responsive-images.html"></a></li>
+                        <li><a href="week3/bom.html">storage assignment</a></li>
+                    </ul>
+                    <ul class="week">
+                        <li>Week 04</li>
+                    </ul>
+                    <ul class="week">
+                        <li>Week 05</li>
+                    </ul>
+                    <ul class="week">
+                        <li>Week 06</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="aside">
+                <h2>Information</h2>
+                <p>Weather</p>
+                <p>Visits</p>
+                <!--<iframe src="https://www.google.com/maps/place/Palm+Bay,+FL/@27.94352,-80.8080441,11z/data=!3m1!4b1!4m6!3m5!1s0x88de0d3474edb837:0xb256832a4d2d844e!8m2!3d28.0344621!4d-80.5886646!16zL20vMHJocmc?entry=ttu" title="Palm Bay, Florida"></iframe>-->
+            </section>
+        </div>
     </main>
     <footer>
         <p>&copy; 2024 Kiara Ward - United States</p>

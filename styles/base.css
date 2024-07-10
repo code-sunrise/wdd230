@@ -88,9 +88,10 @@ button {
 	background: none;
 	color: #FFFFFF;
  	position: absolute;
-	left: 20px;
+	right: 20px;
     top: 2px;
 }
+
 #burger::before {
 	content: "☰";
 }
@@ -98,13 +99,6 @@ button {
 #burger.open::before {
 	content: "X";
 }
-
-/*main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2em;
-    position: relative;
-}*/
 
 header {
     display: flex;
