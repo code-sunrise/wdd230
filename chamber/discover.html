@@ -1,11 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Discover</title>
+    <meta name="description" content="discover page of chamber project">
+    <meta name="author" content="Kiara Ward">
+    <meta property="og:title" content="Kiara Ward - WDD230 - Chamber Final">
+    <meta property="og:type" content="chamber of commerce final">
+    <meta property="og:image" content="WDD230 Chamber of Commerce Final Home Page">
+    <meta property="og:url" content="https://code-sunrise.github.io/wdd230/chamber/index.html">
+    <!--Add social media meta settings for the title, type, image, and url-->
+    <!--flavicon-->
+    <link rel="icon" href="images/chamber.ico">
+
+    <!--Ssyle sheets-->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
+    <!-- Anything that fits the whole screen has no class
+     Anything that hits the 'max width' on the margin is .page-->
+    <header>
+        <div class="headergrid">
+            <img id="banner" src="images/banner.jpg" alt="header image">
+            <p class="credit">Photo by <a
+                    href="https://unsplash.com/@lance_asper?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Lance
+                    Asper</a> on <a
+                    href="https://unsplash.com/photos/aerial-photography-of-coastline-with-people-eJx43ng-fTU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </p>
+            <h1>Palm Bay Chamber of Commerce</h1>
+        </div>
+    </header>
+    <nav class="navigation">
+        <button id="burger"></button>
+        <a href="index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+    </nav>
+    <main id="discover">
+
+        <!--Apply grid to put to the side-->
+        <div class="discoverside">
+            <section>
+                <img src="" alt="">
+                <p class="credit"></p>
+                <h2></h2>
+                <p></p>
+            </section>
+            <section>
+                <h2></h2>
+                <p></p>
+                <img src="" alt="">
+                <p class="credit"></p>
+            </section>
+            <section>
+                <h2></h2>
+                <img src="" alt="">
+                <p class="credit"></p>
+                <p></p>
+            </section>
+        </div>
+
+        <!--Each image needs to be optimized and lazy load-->
+        <div class="discoverpics">
+            <picture><img src="" alt="" loading="lazy"></picture>
+            <picture><img src="" alt="" loading="lazy"></picture>
+            <picture><img src="" alt="" loading="lazy"></picture>
+            <picture><img src="" alt="" loading="lazy"></picture>
+            <picture><img src="" alt="" loading="lazy"></picture>
+            <picture><img src="" alt="" loading="lazy"></picture>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Kiara Ward</p>
+        <p>other contact information</p>
+        <span id="lastModified"></span>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/burger.js"></script>
 </body>
+
 </html>

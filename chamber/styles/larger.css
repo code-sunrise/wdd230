@@ -28,4 +28,11 @@
         margin-top: 3em;
         text-align: center;
     }
+
+    /* discover page*/
+    #discover {
+        grid-template-columns: 1fr;
+        padding: 2em;
+        gap: 2em;
+    }
 }
